@@ -3,6 +3,7 @@ import React from "react";
 import StorePicker from "./StorePicker";
 import App from "./App";
 import NotFound from "./NotFound";
+import "../css/style.css";
 
 const Router = () => (
   <BrowserRouter>
