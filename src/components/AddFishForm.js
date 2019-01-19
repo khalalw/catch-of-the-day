@@ -6,6 +6,7 @@ class AddFishForm extends Component {
   statusRef = React.createRef();
   descRef = React.createRef();
   imageRef = React.createRef();
+
   createFish = e => {
     e.preventDefault();
     const fish = {
