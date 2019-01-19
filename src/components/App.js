@@ -5,7 +5,7 @@ import Inventory from "./Inventory";
 import sampleFishes from "../sample-fishes";
 import Fish from "./Fish";
 
-class App extends Component {
+export class App extends Component {
   state = {
     fishes: {},
     order: {},
@@ -50,7 +50,7 @@ class App extends Component {
             })}
           </ul>
         </div>
-        <Order />
+        <Order fishes={this.state.fishes} order={this.state.order} />
         <Inventory
           addFish={this.addFish}
           loadSampleFishes={this.loadSampleFishes}
