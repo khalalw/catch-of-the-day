@@ -25,7 +25,7 @@ export class App extends Component {
     });
   }
 
-  componentWillUpdate(nextProps, nextState) {
+  getSnapshotBeforeUpdate() {
     const { params } = this.props.match;
     localStorage.setItem(params.storeId, JSON.stringify(this.state.order));
   }
@@ -78,6 +78,7 @@ export class App extends Component {
         <Inventory
           addFish={this.addFish}
           loadSampleFishes={this.loadSampleFishes}
+          fishes={this.state.fishes}
         />
       </div>
     );
