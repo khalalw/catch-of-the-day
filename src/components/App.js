@@ -119,6 +119,7 @@ export class App extends Component {
           deleteFish={this.deleteFish}
           loadSampleFishes={this.loadSampleFishes}
           fishes={this.state.fishes}
+          storeId={this.props.match.params.storeId}
         />
       </div>
     );
